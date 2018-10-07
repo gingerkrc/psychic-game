@@ -25,7 +25,7 @@ window.onload = function() {
 document.onkeyup = function(event) {
 	var userGuess = event.key;
 	lettersGuessed.push(userGuess);
-	console.log(computerGuess[0]);
+	console.log(userGuess[0]);
 
 if (userGuess === computerGuess[0]) {
 	wins++;
@@ -47,8 +47,8 @@ else {
 
 // Display the wins, losses, and guesses
         winsText.textContent = "Hits: " + wins;
-        lossesText.textContent = "Misses: " + losses;
-        guessesText.textContent = "Letters you have guessed: " + userGuess;
+		lossesText.textContent = "Misses: " + losses;
+		guessesText.textContent = "Letters you have guessed: " + userGuess; 
             
     }
 }
